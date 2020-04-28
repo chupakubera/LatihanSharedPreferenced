@@ -9,7 +9,6 @@
                   membuat activity_login sebagi tampilan default pada AndroidManifest.xml,
                   mengedit tampilan activity_login,
                   menambahkan fungsi logic pada kelas LoginActivity
-
  */
 
 package com.chupakubera.latihansharedpreference;
@@ -23,6 +22,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.chupakubera.latihansharedpreference.model.UserModel;
+import com.chupakubera.latihansharedpreference.util.Preferences;
 import com.chupakubera.latihansharedpreferenced.R;
 
 public class LoginActivity extends AppCompatActivity {
