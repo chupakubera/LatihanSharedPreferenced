@@ -10,7 +10,7 @@
 
 package com.chupakubera.latihansharedpreference.model;
 
-public class UselModel {
+public class UserModel {
     private String username;
     private String password;
     private String phone;
