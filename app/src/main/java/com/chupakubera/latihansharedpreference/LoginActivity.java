@@ -51,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 startActivity(new Intent(getBaseContext(), RegisterActivity.class));
             }
-        })
+        });
     }
 
     /**
@@ -87,7 +87,7 @@ public class LoginActivity extends AppCompatActivity {
         // Jika form user kosong atau memenuhi kriteria di Method cekUser() maka, Set error di Form-
         // User dengan menset variable fokus dan error di Viewnya juga cancel menjadi true
         if (TextUtils.isEmpty(userName)) {
-            edtUsername.setError("Harus disis");
+            edtUsername.setError("Harus diisi");
             fokus = edtUsername;
             cancel = true;
         } else if (!cekUser(userName)) {
@@ -99,7 +99,7 @@ public class LoginActivity extends AppCompatActivity {
         // Jika form password kosong dan memenuhi kriteria di Method cekPassword maka,
         // Reaksinya sama dengan percabangan User di atas. Bedanya untuk Password dan Repassword
         if (TextUtils.isEmpty(password)) {
-            edtUsername.setError("Harus disis");
+            edtUsername.setError("Harus diisi");
             fokus = edtPassword;
             cancel = true;
         } else if (!cekPassword(password)) {
